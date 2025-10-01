@@ -1,5 +1,5 @@
 # simple-chat
-A bidirectional chat using ICMP Echo Requests
+A bidirectional chat using ICMP Echo Requests or a UDP port
 
 ## Setup 
 Using 2 Linux Machines, execute these commands:
@@ -17,7 +17,7 @@ Edit these variables to fit the environment:
 
 ## Run the Code
 1. In terminal 1, run the program:
- - `sudo python3 simple_chat.py`
+ - `sudo python3 simple_chat_icmp.py` or `sudo python3 simple_chat_udp.py`
 2. In terminal 2, run tcpdump:
  - `sudo tcpdump icmp -A`
 3. Repeat these steps for the second linux machine
